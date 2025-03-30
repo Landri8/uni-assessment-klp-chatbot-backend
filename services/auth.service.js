@@ -14,7 +14,7 @@ const login = async (body) => {
         }
 
         // Check if user is already logged in
-        if (user.id !== "USR007") {
+        if (user.id !== "USR000000001") {
             const loggedAt = await getCache(user.id);
             if (loggedAt) {
                 throw new Error('Already logged in!');
